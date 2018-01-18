@@ -1,9 +1,9 @@
 
 public class ArrayMethods1 
 {
-	public static void swap (int[]arr, int mama, int mio )
+	public static void swap (String[]arr, int mama, int mio )
 	{
-		int store = arr[mama];
+		String store = arr[mama];
 		arr[mama]= arr[mio];
 		store = arr[mio];
 	}
@@ -12,11 +12,21 @@ public class ArrayMethods1
 	public static void bubbleSort(String[]list1)
 	{
 		int swapnum = 1;
-		while(swapnum)
+		while(swapnum != 0)
 		{
-			
+			swapnum = 0;
+			for (int i = 0; i < list1.length; i++ )
+			{
+				if ((list1[i].compareTo(list1[i+1])>0))
+				{
+					swap( String[]list1 , i , i+1);
+				}
+			}
 		}
 	}
+
+
+
 
 
 
