@@ -19,7 +19,16 @@ public class ArrayMethods1
 			{
 				if ((list1[i].compareTo(list1[i+1])>0))
 				{
-					swap( String[]list1 , i , i+1);
+					swap( list1 , i , i+1);
+					swapnum = 1;
+				}
+				if ((list1[i].compareTo(list1[i+1])<0))
+				{
+					
+				}
+				if ((list1[i].compareTo(list1[i+1]) == 0 ))
+				{
+					
 				}
 			}
 		}
