@@ -24,14 +24,18 @@ public class ArrayMethods1
 				}
 				if ((list1[i].compareTo(list1[i+1])<0))
 				{
-					
+					swapnum = swapnum + 0;
 				}
 				if ((list1[i].compareTo(list1[i+1]) == 0 ))
 				{
-					
+					swapnum = swapnum + 0;
 				}
 			}
 		}
+	}
+	public static void selectionSort(String[]list1)
+	{
+		
 	}
 
 
