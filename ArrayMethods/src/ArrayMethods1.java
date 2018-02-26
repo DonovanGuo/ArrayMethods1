@@ -58,9 +58,9 @@ public class ArrayMethods1
 				int mindex = i; 
 				for( int j = i+1; j < list1.length; j++)
 				{
-					if( list1[j] < list1[i] )
+					if( list1[j] < list1[mindex] )
 					{
-						swapDouble( list1 ,i ,j);
+						swapDouble( list1 ,mindex ,j);
 					}
 				}
 			}
