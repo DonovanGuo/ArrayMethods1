@@ -58,11 +58,15 @@ public class ArrayMethods1
 				int mindex = i; 
 				for( int j = i+1; j < list1.length; j++)
 				{
-					if( list1[j] < )
+					if( list1[j] < list1[i] )
+					{
+						swapDouble( list1 ,i ,j);
+					}
 				}
 			}
 		}
 	}
+
 
 
 
