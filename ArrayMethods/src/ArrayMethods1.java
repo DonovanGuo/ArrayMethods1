@@ -66,6 +66,18 @@ public class ArrayMethods1
 			}
 		}
 	}
+	public static void insertionSort(int[]arr)
+	{
+		for(int i = 2; i < arr.length; i++)
+		{
+			int j = i;
+			while((j> 1) && (arr[j-1] > arr[j]))
+			{
+				swapInt(arr,j,j-1);
+				j= j-1;
+			}
+		}
+	}
 
 
 
