@@ -33,7 +33,7 @@ public class ArrayMethods1
 			swapnum = 0;
 			for (int i = 0; i < list1.length; i++ )
 			{
-				if ((list1[i].compareTo(list1[i+1])>0) && (i < list1.length -1))
+				if ((list1[i].compareTo(list1[i+1])>0) && (i < list1.length -2))
 				{
 					swapString( list1 , i , i+1);
 					swapnum = 1;
@@ -43,17 +43,17 @@ public class ArrayMethods1
 	}
 	public static void selectionSort(double[]list1)
 	{
-		for(int i = 1; i< list1.length;i++)
+		for(int i = 1; i< list1.length-1;i++)
 		{
 			int mindex = i;
-			for( int j = i+1; j< list1.length; j++)
+			for( int j = i+1; j < list1.length; j++)
 			{
 				if(list1[j] < list1[mindex])
 				{
 					mindex = j;
-					swapDouble(list1,i,mindex);
 				}
 			}
+			swapDouble(list1,i,mindex);
 		}
 	}
 	public static void insertionSort(int[]arr)
@@ -71,7 +71,7 @@ public class ArrayMethods1
 	public static void main(String[]args)
 	{
 	int[]test1 = {1,4,4,5,2,4,3,17,0};
-	double[]test2 = {1.1,4.1,4.2,5.0,2.0,4.0,3.0,17.0,0.0};
+	double[]test2 = {1.1, 4.1 , 4.2 , 5.0 , 2.0 , 4.0 , 3.0 , 17.0 , 0.0};
 	String[]test3 = {"zebra","tortilla","abba","foo","bar","aba"};
 	
 	insertionSort(test1);
