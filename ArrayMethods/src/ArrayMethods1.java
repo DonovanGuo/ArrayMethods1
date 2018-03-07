@@ -28,19 +28,24 @@ public class ArrayMethods1
 	public static void bubbleSort(String[]list1)
 	{
 		int swapnum = 1;
+		int combthrough = list1.length-1;
 		while(swapnum != 0)
 		{
 			swapnum = 0;
-			for (int i = 0; i < list1.length; i++ )
+			for (int i = 0; i < combthrough; i++ )
 			{
-				if ((list1[i].compareTo(list1[i+1])>0) && (i < list1.length -2))
+				if ((list1[i].compareTo(list1[i+1])>0))
 				{
 					swapString( list1 , i , i+1);
-					swapnum = 1;
+					swapnum ++;
 				}
+				combthrough--;
 			}
+			
 		}
 	}
+	
+	
 	public static void selectionSort(double[]list1)
 	{
 		for(int i = 1; i< list1.length-1;i++)
